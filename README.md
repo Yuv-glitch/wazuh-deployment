@@ -409,3 +409,32 @@ sudo systemctl status auditd
 | Execution | Python Execution | T1059.006 |
 | Exfiltration | Alternative Protocol | T1048 |
 | Exfiltration | Over C2 Channel | T1041 |
+
+---
+
+## Images 
+
+<img width="1481" height="985" alt="Screenshot 2026-03-13 194345" src="https://github.com/user-attachments/assets/215207f8-23c6-498e-91b0-8e16fd310b93" />
+
+---
+<img width="1660" height="970" alt="Screenshot 2026-03-13 194406" src="https://github.com/user-attachments/assets/d83ff6ef-3e3e-42ff-aa63-9d371045e213" />
+
+---
+<img width="1855" height="859" alt="Screenshot 2026-03-13 194438" src="https://github.com/user-attachments/assets/fb5f34c5-1bb8-4c8a-9fa2-6390f355ca77" />
+
+---
+<img width="1855" height="880" alt="Screenshot 2026-03-13 194458" src="https://github.com/user-attachments/assets/6ae50be8-5e6b-478b-aaec-9d7c268a1013" />
+
+---
+<img width="1850" height="858" alt="Screenshot 2026-03-13 194517" src="https://github.com/user-attachments/assets/08000038-81c1-43d9-89f3-27511fef401a" />
+
+---
+<img width="1857" height="654" alt="Screenshot 2026-03-13 194613" src="https://github.com/user-attachments/assets/d8db4939-50fc-4187-a1f4-124d846ac6af" />
+
+
+
+
+
+
+
+
