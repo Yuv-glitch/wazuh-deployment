@@ -18,62 +18,7 @@ A complete adversary emulation and detection validation lab using Atomic Red Tea
 
 ## Prerequisites & Common Issues
 
-### VMware Network Fix (Windows 11 Host)
 
-WSL2 enables Hyper-V which silently breaks VMware NAT. Disable it:
-
-```powershell
-# Check if Hyper-V is active
-bcdedit /enum | findstr hypervisorlaunchtype
-
-# Disable it
-bcdedit /set hypervisorlaunchtype off
-```
-
-Restart Windows after running this.
-
-### If VM Has No Internet After Boot
-
-The Ubuntu installer leaves an empty netplan config if it had no internet during installation. Fix it:
-
-```bash
-sudo nano /etc/netplan/00-installer-config.yaml
-```
-
-Paste this:
-
-```yaml
-network:
-  version: 2
-  ethernets:
-    ens33:
-      dhcp4: true
-```
-
-Apply:
-
-```bash
-sudo netplan apply
-ip a
-```
-
-### Fix systemd-networkd-wait-online Hanging at Boot
-
-```bash
-sudo systemctl disable systemd-networkd-wait-online.service
-sudo systemctl mask systemd-networkd-wait-online.service
-```
-
-### Restart VMware Services (Windows Host — Admin PowerShell)
-
-```powershell
-net stop vmnat
-net stop vmnetdhcp
-net start vmnetdhcp
-net start vmnat
-```
-
----
 
 ## Part 1 — VM 1: Wazuh Server Setup
 
